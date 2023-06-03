@@ -278,8 +278,8 @@ img {
 Responsive CSS
 ============***============ */
 
-/* Min Width 1920px and Max Width 5000px */
-@media (min-width: 1920px) and (max-width: 5000px) {
+/* Min Width 2000px and Max Width 5000px */
+@media (min-width: 2000px) and (max-width: 5000px) {
   .ally-listing-content {
     padding: 45% 15% 200px;
   }
