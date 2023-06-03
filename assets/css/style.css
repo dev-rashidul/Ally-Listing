@@ -1,0 +1,413 @@
+/* Base Styles CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  background: #0b1b28;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Styles CSS End */
+
+/* Ally Listing Section CSS Start */
+
+.ally-listing-container {
+  display: flex;
+}
+
+.ally-content-wrapper,
+.ally-listing-map {
+  max-width: 50%;
+  width: 100%;
+}
+
+.ally-content-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.ally-listing-content {
+  padding: 300px 15% 200px;
+}
+
+.ally-listing-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.ally-listing-img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.ally-listing-img::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(180deg, rgba(11, 27, 40, 0) 0%, #0b1b28 100%);
+}
+
+.ally-listing-calculator {
+  position: relative;
+  max-width: 130px;
+  width: 100%;
+  background: #017ada;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ally-listing-calculator::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #fa8242;
+  border-radius: 8px 8px 0 0;
+}
+
+.ally-listing-calculator h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+.ally-listing-calculator h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.ally-listing-calculator h3 span {
+  position: relative;
+  display: initial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: -6px;
+}
+
+.ally-listing-content span {
+  display: block;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 15px;
+}
+
+.ally-listing-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  color: #ffffff;
+  padding-right: 100px;
+}
+
+.location {
+  display: flex;
+  padding: 20px 0 40px;
+}
+
+.location-icon {
+  padding-right: 10px;
+}
+
+.div-location-content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: -10px;
+}
+
+.div-location-content span {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ally-listing-content > h6 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.ally-listing-content > p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.ally-listing-content > p a {
+  color: #fa8242;
+  text-decoration: underline;
+}
+
+.add-to-calender-btn {
+  padding-top: 40px;
+}
+
+.add-to-calender-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 10px;
+  background: #fa8242;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+  border-radius: 8px;
+}
+
+.add-to-calender-btn a img {
+  padding-right: 10px;
+}
+
+.ally-listing-map p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.ally-listing-map iframe {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.add-to-calender-btn {
+  display: block;
+}
+
+.add-to-calender-btn-mobile {
+  display: none;
+}
+
+/* Ally Listing Section CSS End */
+
+/* Footer Section CSS Start */
+
+.footer-wrapper {
+  background: #434343;
+  padding: 30px 0;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.footer-copy p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.footer-copy p a {
+  color: #fa8242;
+}
+
+.footer-menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-menu ul li {
+  padding: 0 8px;
+}
+
+.footer-menu ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fa8242;
+}
+
+/* Footer Section CSS End */
+
+/* ============***============
+Responsive CSS
+============***============ */
+
+/* Min Width 1200px and Max Width 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .ally-listing-content h2 {
+    font-size: 56px;
+    line-height: 70px;
+    padding-right: 0px;
+  }
+}
+
+/* Min Width 992px and Max Width 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ally-listing-content h2 {
+    font-size: 56px;
+    line-height: 70px;
+    padding-right: 0px;
+  }
+
+  .ally-listing-content {
+    padding: 250px 10% 200px;
+  }
+
+  .footer-content-wrapper {
+    padding: 0 50px;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .ally-listing-content h2 {
+    font-size: 48px;
+    line-height: 55px;
+    padding-right: 0px;
+  }
+
+  .ally-listing-content {
+    padding: 250px 10% 200px;
+  }
+
+  .footer-content-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  .footer-menu ul {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+@media (min-width: 300px) and (max-width: 767px) {
+  .ally-listing-content h2 {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 0px;
+  }
+
+  .ally-listing-content {
+    padding: 140px 20px 25px;
+  }
+
+  .ally-listing-container {
+    display: block;
+  }
+
+  .ally-content-wrapper,
+  .ally-listing-map {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .div-location-content h6,
+  .ally-listing-content > p {
+    font-size: 14px;
+  }
+
+  .ally-listing-content > h6 {
+    font-size: 12px;
+  }
+
+  .ally-listing-map {
+    padding: 0 20px;
+  }
+
+  .ally-listing-map p {
+    display: block;
+  }
+
+  .ally-listing-map iframe {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .add-to-calender-btn {
+    display: none;
+  }
+
+  .add-to-calender-btn-mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+  }
+
+  .footer-wrapper {
+    padding: 23px 0;
+  }
+
+  .footer-content-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footer-copy {
+    border-top: 1px solid #373737;
+    padding-top: 15px;
+  }
+
+  .footer-menu ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-menu ul li {
+    padding: 7px 0px;
+  }
+}
